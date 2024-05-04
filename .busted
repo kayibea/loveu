@@ -1,0 +1,15 @@
+return {
+    _all = {
+        ROOT = { "spec/" },
+        pattern = "spec.lua$",
+        coverage = true
+    },
+    default = {
+        verbose = true
+    },
+    apiUnit = {
+        tags = "api",
+        ROOT = { "spec/" },
+        verbose = true
+    }
+}

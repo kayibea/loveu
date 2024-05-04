@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        ".busted": "lua",
+        "luarocks": "sh"
+    },
+    "Lua.workspace.library": [
+        "${3rd}/lfs/library",
+        "/home/maars/.config/Code/User/globalStorage/sumneko.lua/addonManager/addons/luafilesystem/module/library",
+        "/home/maars/.vscode/extensions/droidxrx.gameguardian-lua-0.0.3/EmmyLua",
+        "/home/maars/.config/Code/User/globalStorage/sumneko.lua/addonManager/addons/busted/module/library",
+        "${3rd}/luassert/library",
+        "/home/maars/.config/Code/User/globalStorage/sumneko.lua/addonManager/addons/love2d/module/library"
+    ],
+    "Lua.addonManager.enable": false,
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.runtime.special": {
+        "love.filesystem.load": "loadfile"
+    },
+}

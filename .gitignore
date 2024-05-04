@@ -1,0 +1,9 @@
+/luarocks
+/lua
+/lua_modules
+/.luarocks
+/src/script.lua
+/src/main.lua
+/luacov.report.out
+/luacov.stats.out
+/love2d
