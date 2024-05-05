@@ -26,7 +26,7 @@ local enemySpawnTimer = 0
 local playerShootTimer = 0
 
 function love.load()
-  love.window.setTitle('Escape the balls')
+  love.window.setTitle('Battle Ball')
   love.window.setMode(900, 800, { resizable = true, vsync = true, minwidth = 400, minheight = 300 })
 
   score = 0
