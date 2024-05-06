@@ -134,7 +134,8 @@ end
 
 
 local function updateExplosions(dt)
-  for i, explosion in ipairs(explosions) do
+  for i = #explosions, 1, -1 do
+    local explosion = explosions[i]
     if explosion.isGrowing then
       explosion.radius = explosion.radius + EXPLOSION_GROWTH_RATE * dt
       if explosion.radius > EXPLOSION_MAX_RADIUS then
@@ -149,16 +150,7 @@ local function updateExplosions(dt)
   end
 end
 
-local function updateExplosions(dt)
-  for i = #explosions, 1, -1 do
-    local explosion = explosions[i]
-    explosion.radius = explosion.radius + (explosion.isGrowing and 1 or -1) * EXPLOSION_GROWTH_RATE * dt
-    if (explosion.isGrowing and explosion.radius > EXPLOSION_MAX_RADIUS) or
-        (not explosion.isGrowing and explosion.radius < 0) then
-      table.remove(explosions, i)
-    end
-  end
-end
+
 
 
 local function updateBullets(dt)
